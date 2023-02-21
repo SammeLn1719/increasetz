@@ -1,0 +1,155 @@
+@import"var.scss";
+
+footer{
+    display: block;
+    justify-content: space-between;
+    min-width: 360px;
+    margin: 0 auto;
+    padding: 22px 0 50px;
+    border-top:  3px solid $bg;
+    color: $text;
+}
+.footer{
+    &Left{
+        width: 360px;
+        height: 320px;
+        background-color: $bg;
+        & table{
+            padding: 45px 0 0 45px;
+            width: 100%;
+            & td{
+                padding: 6px 0;
+                width: 50%;
+            }
+        }
+    }
+    &Center{
+        width: 360px;
+        height: 320px;
+        background-color: $bg;
+        & ul{
+            list-style: square;
+            padding: 45px;
+            & li{
+                padding: 6px 0 ;
+            }
+        }
+    }
+    &Right{
+        width: 360px;
+        height: 290px;
+        
+        &Row{
+            width: 100%;
+            height: 145px;
+            background-color: $bg;
+        }
+    }
+}
+
+@media(min-width: 1366px){
+    footer{
+        display: flex;
+        justify-content: space-between;
+        width: 1366px;
+        margin: 0 auto;
+        padding: 22px 0 50px;
+        border-top:  3px solid $bg;
+        color: $text;
+    }
+    .footer{
+        &Left{
+            width: 420px;
+            height: 320px;
+            background-color: $bg;
+            & table{
+                padding: 22px;
+                width: 100%;
+                & td{
+                    padding: 6px 0;
+                    width: 50%;
+                }
+            }
+        }
+        &Center{
+            width: 420px;
+            height: 320px;
+            background-color: $bg;
+            & ul{
+                list-style: square;
+                padding: 22px 45px;
+                & li{
+                    padding: 6px 0 ;
+                }
+            }
+        }
+        &Right{
+            width: 420px;
+            height: 320px;
+            row-gap: 30px;
+            display: grid;
+            &Row{
+                width: 100%;
+                height: 145px;
+                background-color: $bg;
+            }
+        }
+    }
+    
+}
+
+@media(min-width: 361px){
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+        margin: 0 auto;
+        padding: 22px 0 50px;
+        border-top:  3px solid $bg;
+        color: $text;
+    }
+    .footer{
+        &Left{
+            max-width: 420px;
+            height: 320px;
+            background-color: $bg;
+            & table{
+                padding: 22px 0 0 30px;
+                width: 100%;
+                & td{
+                    padding: 6px 0;
+                    width: 50%;
+                }
+            }
+        }
+        &Center{
+            max-width: 420px;
+            height: 320px;
+            background-color: $bg;
+            & ul{
+                list-style: square;
+                padding: 22px 0 0 38px;
+                & li{
+                    padding: 6px 0 ;
+                }
+            }
+        }
+        &Right{
+            max-width: 420px;
+            height: 320px;
+            row-gap: 30px;
+            display: grid;
+            @media(max-width:1079px){
+                padding: 22px;
+            }
+            
+            &Row{
+                width: 100%;
+                height: 145px;
+                background-color: $bg;
+            }
+        }
+    }
+    
+}

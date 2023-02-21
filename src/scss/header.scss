@@ -1,0 +1,109 @@
+@import"var.scss";
+
+header{
+    display: flex;
+    padding-bottom: 22px;
+    border-bottom:  3px solid $bg;
+    color: $text;
+    
+    & a{
+        color: $text;
+    }
+}
+.logo,.logoName,.contacts{
+    background-color: $bg;
+}
+
+.contacts{
+    width: 700px;
+    display: flex;
+    justify-content: end;   
+    & ul{
+        margin: 15px;
+        display: block; 
+        list-style: none;
+        & li{
+            padding: 5px;
+            text-align: right;
+        }
+    }
+}
+
+@media(min-width: 1366px){
+    header{
+        display: flex;
+        height: 120px;
+        gap: 22px;
+        width: 1366px;
+        margin: 0 auto;
+        padding: 50px 0 22px;
+        border-bottom:  3px solid $bg;
+        color: $text;
+        
+        & a{
+            color: $text;
+        }
+    }
+    .logo,.logoName,.contacts{
+        background-color: $bg;
+    }
+    .logo{
+        width: 140px;
+    }
+    .logoName{
+        width: 480px;
+    }
+    .contacts{
+        width: 700px;
+        display: flex;
+        justify-content: end;   
+        & ul{
+            margin: 15px;
+            display: block; 
+            list-style: none;
+            & li{
+                padding: 5px;
+                text-align: right;
+            }
+        }
+    }
+}
+@media(min-width: 360px){
+    header{
+        display: flex;
+        height: 120px;
+        gap: 22px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 50px 0 22px;
+        border-bottom:  3px solid $bg;
+        color: $text;
+        
+        & a{
+            color: $text;
+        }
+    }
+    .logo,.logoName,.contacts{
+        background-color: $bg;
+    }
+    .logo{
+        width: 140px;
+    }
+    .logoName{
+        width: 480px;
+    }
+    .contacts{
+        width: 700px;
+        display: flex;
+        justify-content: end;   
+        & ul{
+            margin: 15px;
+            display: block; 
+            list-style: none;
+            & li{
+                padding: 5px;
+                text-align: right;
+            }
+        }
+    }
+}

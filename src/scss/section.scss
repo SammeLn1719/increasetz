@@ -1,0 +1,276 @@
+@import"var.scss";
+
+
+.main{
+    width: 360px;
+    margin: 22px auto;
+    color: $text;
+    display: block;
+    
+   }
+   .reference{
+    display: table;
+    position: relative;
+    width: 360px;
+    height: 100px;
+    background-color: $bg;
+    // margin-right:22px;
+    & h3{
+        padding: 22px 0 0 22px;
+    }
+    & p{
+        padding: 22px;
+    }
+   }
+   .content{
+    width: 100%;
+    
+        &Upper{
+            background-color: $cntnt;
+            color: $bg;
+            margin-bottom: 22px;
+            & h3{
+                padding: 22px 22px 0 25px;
+            }
+            & ul{
+                padding: 25px 70px;
+                & li{
+                    padding: 2px;
+                }
+            }
+            & p{
+                padding: 0 25px 22px ;
+            }
+            & span{
+                font-weight: 600;
+            }
+        }
+        &Product{
+            
+            display: flex;
+            flex-wrap: wrap;
+            padding-bottom: 22px;
+            gap:22px;
+            & .item{
+                background-color: $cntnt;
+                width: 169px;
+                min-height: 200px;
+            }
+        }
+        &Low{
+            display: block;
+            
+            gap: 22px;
+            &Item{
+                background-color: $cntnt;
+                color: $bg;
+                padding: 22px;
+                min-height: 150px;
+            }
+
+        }
+   }
+
+@media(min-width: 1366px){
+   .main{
+    width: 1366px;
+    margin: 22px auto;
+    color: $text;
+    display: flex;
+    
+   }
+   .reference{
+    display: table;
+    position: relative;
+    width: 20%;
+    height: 100px;
+    background-color: $bg;
+    margin-right:22px;
+    padding: 22px;
+   }
+   .content{
+    width: 100%;
+    
+        &Upper{
+            background-color: $cntnt;
+            color: $bg;
+            margin-bottom: 22px;
+            & h3{
+                padding: 22px 0 0 25px;
+            }
+            & ul{
+                padding: 25px 70px;
+                & li{
+                    padding: 2px;
+                }
+            }
+            & p{
+                padding: 0 25px 22px ;
+            }
+            & span{
+                font-weight: 600;
+            }
+        }
+        &Product{
+            
+            display: flex;
+            flex-wrap: wrap;
+            padding-bottom: 22px;
+            gap:22px;
+            & .item{
+                background-color: $cntnt;
+                width: 199px;
+                min-height: 220px;
+            }
+        }
+        &Low{
+            display: flex;
+            
+            gap: 22px;
+            &Item{
+                background-color: $cntnt;
+                color: $bg;
+                padding: 22px;
+                min-height: 150px;
+            }
+
+        }
+   }
+    
+}
+
+@media(min-width: 864px){
+    .main{
+     width: 100%;
+     margin: 22px auto;
+     color: $text;
+     display: flex;
+     
+    }
+    .reference{
+     display: table;
+     position: relative;
+     width: 20%;
+     height: 100px;
+     background-color: $bg;
+     margin-right:22px;
+     padding: 22px;
+    }
+    .content{
+     width: 100%;
+     
+         &Upper{
+             background-color: $cntnt;
+             color: $bg;
+             margin-bottom: 22px;
+             & h3{
+                 padding: 22px 0 0 25px;
+             }
+             & ul{
+                 padding: 25px 70px;
+                 & li{
+                     padding: 2px;
+                 }
+             }
+             & p{
+                 padding: 0 25px 22px ;
+             }
+             & span{
+                 font-weight: 600;
+             }
+         }
+         &Product{
+             
+             display: flex;
+             flex-wrap: wrap;
+             padding-bottom: 22px;
+             gap:22px;
+             & .item{
+                 background-color: $cntnt;
+                 width: 199px;
+                 min-height: 220px;
+             }
+         }
+         &Low{
+             display: flex;
+             
+             gap: 22px;
+             &Item{
+                 background-color: $cntnt;
+                 color: $bg;
+                 padding: 22px;
+                 min-height: 150px;
+             }
+ 
+         }
+    }
+     
+ }
+
+@media(min-width: 361px){
+    .main{
+     width: 100%;
+     margin: 22px auto;
+     color: $text;
+     display: block;
+     
+    }
+    .reference{
+     display: table;
+     position: relative;
+     width: 100%;
+     height: 100px;
+     background-color: $bg;
+     margin-right:22px;
+     padding: 22px;
+    }
+    .content{
+     width: 100%;
+     
+         &Upper{
+             background-color: $cntnt;
+             color: $bg;
+             margin-bottom: 22px;
+             & h3{
+                 padding: 22px 0 0 25px;
+             }
+             & ul{
+                 padding: 25px 70px;
+                 & li{
+                     padding: 2px;
+                 }
+             }
+             & p{
+                 padding: 0 25px 22px ;
+             }
+             & span{
+                 font-weight: 600;
+             }
+         }
+         &Product{
+             
+             display: flex;
+             flex-wrap: wrap;
+             padding-bottom: 22px;
+             gap:22px;
+             & .item{
+                 background-color: $cntnt;
+                 width: 199px;
+                 min-height: 220px;
+             }
+         }
+         &Low{
+             display: flex;
+             
+             gap: 22px;
+             &Item{
+                 background-color: $cntnt;
+                 color: $bg;
+                 padding: 22px;
+                 min-height: 150px;
+             }
+ 
+         }
+    }
+     
+ }
